@@ -1,0 +1,58 @@
+body {
+  font-family: Roboto;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+}
+nav{
+box-shadow: 1px 5px 10px rgba(0,0,0, 0.6);
+min-height: 10vh;
+background-color: rgba(17, 16, 16, 0.925);
+display: flex;
+justify-content: center;
+align-items: center;
+width : 90vw;
+margin: 0 auto;
+}
+#nav-links {
+  /* display:flex; */
+  overflow: hidden;
+  list-style: none;
+}
+#nav-links li {
+padding:12px;
+border-right: 0.5px solid rgba(255,255,255, 0.2);
+display: inline-block;
+}
+
+#nav-links li a {
+  text-decoration: none;
+  color:white;
+}
+main .container{
+  position: absolute;
+  text-align: center;
+  top:50%;
+  left:50%;
+transform: translate(-50%,-50%)
+}
+#change{
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+main h3{
+  background-color: #233333c0;
+  color: white;
+  width: 70vw;
+  padding: 10px 35px;
+  margin: 20px;
+  border-radius: 14px;
+}
