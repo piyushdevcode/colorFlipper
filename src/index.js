@@ -1,4 +1,4 @@
-import "./styles.css";
+// import "./styles.css";
 var normal = true;
 
 const col = document.querySelector(".color")
