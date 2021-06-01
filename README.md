@@ -1,2 +1,2 @@
-# colorFlipper
+# ColorFlipper
 displays random color 🎨
