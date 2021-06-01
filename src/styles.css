@@ -37,6 +37,7 @@ display: inline-block;
   color:white;
 }
 main .container{
+  font-size: 1.1em;
   position: absolute;
   text-align: center;
   top:50%;

@@ -1,20 +1,22 @@
 // import "./styles.css";
-var normal = true;
+var option = 2;
 
 const col = document.querySelector(".color")
 const colors = ["deeppink","orangered","tomato","gold","dodgerblue","springgreen"]
 const btn = document.getElementById("change")
+const hex_vals = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"]
 btn.addEventListener(
 "click",
 function() {
-  if (normal){
+  if (option === 0){
     const len = colors.length -1;
    const random = Math.floor(Math.random()*(len-0+1)+0);
    document.body.style.backgroundColor = colors[random];
    col.textContent = colors[random];
    
   }
-  else{
+  // FOR RGB 
+  else if(option === 1) {
     var rgb = [];
    for(let i = 0; i < 3; ++i){
      let r = Math.floor((Math.random())* (255-0+1)+0);
@@ -26,11 +28,22 @@ function() {
   document.body.style.backgroundColor = rgbColor;
    col.textContent = rgbColor;
   }
-// normal =!normal;
+
+  //FOR HEX
+  else{
+    let hexColor = "#";
+   for(let i = 0; i < 6; ++i){
+     hexColor += hex_vals[Math.floor(Math.random()*(hex_vals.length))];
+    }
+  document.body.style.backgroundColor = hexColor;
+   col.textContent = hexColor;
+  }
+
+//self toggling normal =!normal; 
 }
 );
 function toggle (x) {
-  normal = x;
+  option = x;
 }
 
 
