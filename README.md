@@ -1,2 +1,2 @@
 # colorFlipper
-Created with CodeSandbox
+displays random color 🎨
