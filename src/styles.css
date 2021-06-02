@@ -45,13 +45,14 @@ main .container{
 transform: translate(-50%,-50%)
 }
 #change{
+  border: 1px solid rgba(255, 255, 255, 0.26);
   opacity: 0.8;
   font-size: 1.15em;
   cursor: pointer;
   border-radius: 0.35rem;
   background-color:transparent;
   padding: 0.15em 0.35em;
-  box-shadow: 3px 3px 7px rgba(0,0,0, 0.3)
+  box-shadow: 3px 3px 7px rgba(0,0,0, 0.3) ;
 }
 #change:hover{
  opacity: 1;
