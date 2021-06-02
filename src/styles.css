@@ -45,15 +45,30 @@ main .container{
 transform: translate(-50%,-50%)
 }
 #change{
-  font-size: 1.3em;
+  font-size: 1.15em;
   cursor: pointer;
+  border-radius: 0.35rem;
+  background-color:transparent;
+  padding: 0.15em 0.35em;
+  box-shadow: 3px 3px 7px rgba(0,0,0, 0.3)
 }
 
 main h3{
+  font-size:1.1em;
   background-color: #233333c0;
   color: white;
   width: 70vw;
-  padding: 10px 35px;
+  padding: 0.567em 0.9em;
   margin: 20px;
   border-radius: 14px;
+}
+.info-box{
+  opacity: 0.75;
+  background-color: rgb(39, 38, 38);
+  color:white;
+  position: absolute;
+  left:0.5%;
+  bottom:1%;
+  box-shadow: 0px 3px 5px rgba(0,0,0, 0.6);
+  padding: 0.2em
 }
