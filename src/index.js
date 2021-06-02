@@ -1,7 +1,7 @@
 // import "./styles.css";
 window.toggle = toggle; // FOR CODESANDBOX
 var option = 2;
-let mode = "Hexcode";
+let mode ;
 const col = document.querySelector(".color")
 const colors = ["deeppink","orangered","tomato","gold","dodgerblue","springgreen"]
 const btn = document.getElementById("change")
@@ -46,13 +46,14 @@ function() {
 );
 function toggle (x) {
   if(x === 0){
-    type.textContent = "Normal";
+    mode = "normal";
   }
   else if(x === 1){
-    type.textContent = "RGB";
+    mode = "RGB";
   }
   else{
-    type.textContent = "Hexcode";
+    mode = "Hexcode";
   }
+  type.textContent = "Normal";
   option = x;
 }

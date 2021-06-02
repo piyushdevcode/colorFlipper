@@ -45,6 +45,7 @@ main .container{
 transform: translate(-50%,-50%)
 }
 #change{
+  opacity: 0.8;
   font-size: 1.15em;
   cursor: pointer;
   border-radius: 0.35rem;
@@ -52,7 +53,10 @@ transform: translate(-50%,-50%)
   padding: 0.15em 0.35em;
   box-shadow: 3px 3px 7px rgba(0,0,0, 0.3)
 }
-
+#change:hover{
+ opacity: 1;
+ transform: scale(1.1);
+}
 main h3{
   font-size:1.1em;
   background-color: #233333c0;
