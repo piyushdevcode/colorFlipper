@@ -8,27 +8,34 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-h2 {
+.light-title {
+  text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 350;
+  font-size:1.3em;
+  letter-spacing: 5px;
 }
 nav{
+margin: 0 auto;
+margin-top: 10px;
 box-shadow: 1px 5px 10px rgba(0,0,0, 0.6);
 min-height: 10vh;
 background-color: rgba(17, 16, 16, 0.925);
-display: flex;
-justify-content: center;
-align-items: center;
-width : 90vw;
-margin: 0 auto;
+width : 25vw;
+border-radius: 0.675em;
 }
 #nav-links {
-  /* display:flex; */
+  flex-wrap: wrap;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
   overflow: hidden;
   list-style: none;
 }
 #nav-links li {
-padding:12px;
-border-right: 0.5px solid rgba(255,255,255, 0.2);
+padding:11px;
+margin-left: 5px;
 display: inline-block;
 }
 
@@ -42,9 +49,9 @@ main .container{
   text-align: center;
   top:50%;
   left:50%;
-transform: translate(-50%,-50%)
+  transform: translate(-50%,-50%);
 }
-#change{
+#change-btn{
   border: 1px solid rgba(255, 255, 255, 0.26);
   opacity: 0.8;
   font-size: 1.15em;
@@ -54,7 +61,7 @@ transform: translate(-50%,-50%)
   padding: 0.15em 0.35em;
   box-shadow: 3px 3px 7px rgba(0,0,0, 0.3) ;
 }
-#change:hover{
+#change-btn:hover{
  opacity: 1;
  transform: scale(1.1);
 }
@@ -62,10 +69,10 @@ main h3{
   font-size:1.1em;
   background-color: #233333c0;
   color: white;
-  width: 70vw;
+  width: 25vw;
   padding: 0.567em 0.9em;
   margin: 20px;
-  border-radius: 14px;
+  border-radius: 15px;
 }
 .info-box{
   opacity: 0.75;
