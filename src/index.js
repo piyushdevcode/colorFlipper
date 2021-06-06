@@ -30,7 +30,6 @@ btn.addEventListener(
       genColor = rgbColor;
     }
     //FOR HEX
-    //FOR HEX
     else {
       let hexColor = "#";
       for (let i = 0; i < 6; ++i) {
@@ -38,6 +37,7 @@ btn.addEventListener(
       }
       genColor = hexColor;
     }
+    genColor = genColor.toUpperCase();
     document.body.style.backgroundColor = genColor;
     document.head.appendChild(colorBorder);
     colorBorder.innerHTML = `#nav-links li{box-shadow: 0px 0px 0px 1.5px ${genColor} inset ;border-radius: 0.675em ;}`

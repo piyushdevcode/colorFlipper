@@ -60,19 +60,26 @@ main .container{
   background-color:transparent;
   padding: 0.15em 0.35em;
   box-shadow: 3px 3px 7px rgba(0,0,0, 0.3) ;
+  animation: grow 2.5s infinite;
+  transition: 500ms linear;
+}
+@keyframes grow {
+  50% {transform: scale(1.1);}
 }
 #change-btn:hover{
  opacity: 1;
  transform: scale(1.1);
 }
 main h3{
-  font-size:1.1em;
-  background-color: #233333c0;
+  font-size:1.3rem;
+  opacity: 0.865;
+  box-shadow: 0px 2px 5px 2px #1817174d ;
   color: white;
-  width: 25vw;
+  width: 18vw;
   padding: 0.567em 0.9em;
   margin: 20px;
   border-radius: 15px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.562);
 }
 .info-box{
   opacity: 0.75;
