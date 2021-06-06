@@ -54,6 +54,6 @@ function toggle (x) {
   else{
     mode = "Hexcode";
   }
-  type.textContent = "Normal";
+  type.textContent = mode;
   option = x;
 }
