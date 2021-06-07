@@ -40,7 +40,7 @@ btn.addEventListener(
     genColor = genColor.toUpperCase();
     document.body.style.backgroundColor = genColor;
     document.head.appendChild(colorBorder);
-    colorBorder.innerHTML = `#nav-links li{box-shadow: 0px 0px 0px 1.5px ${genColor} inset ;border-radius: 0.675em ;}`
+    colorBorder.innerHTML = `#nav-links li{box-shadow: 0px 0px 0px 0.09rem ${genColor} inset ;border-radius: 0.975em ;}`
     col.textContent = genColor;
   }
   );

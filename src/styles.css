@@ -8,6 +8,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+ 
 .light-title {
   text-decoration: none;
   text-align: center;
@@ -32,11 +33,14 @@ border-radius: 0.675em;
   justify-content: space-evenly;
   overflow: hidden;
   list-style: none;
+  align-content: stretch;
 }
 #nav-links li {
 padding:11px;
 margin-left: 5px;
 display: inline-block;
+box-shadow: 0px 0px 0px 0.09rem white inset;
+border-radius: 0.975em ;
 }
 
 #nav-links li a {
@@ -70,15 +74,14 @@ main .container{
  opacity: 1;
  transform: scale(1.1);
 }
-main h3{
+.color-info{
   font-size:1.3rem;
   opacity: 0.865;
   box-shadow: 0px 2px 5px 2px #1817174d ;
   color: white;
-  width: 18vw;
   padding: 0.567em 0.9em;
   margin: 20px;
-  border-radius: 15px;
+  border-radius: 0.56em;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.562);
 }
 .info-box{
@@ -89,5 +92,34 @@ main h3{
   left:0.5%;
   bottom:1%;
   box-shadow: 0px 3px 5px rgba(0,0,0, 0.6);
-  padding: 0.2em
+  padding: 0.2em;
 }
+
+@media (max-width: 768px){
+  #nav-links{
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  #nav-links li{
+    font-size: 0.8rem;
+    margin: 5px 0px;
+  }
+  nav{
+    width: 80vw;
+    background-color: black;
+  }
+  .info-box{
+    font-size: 1.1rem;
+  }
+  .color-info{
+    font-size: 1.2rem;
+    margin-bottom: 3em;
+    padding: 0.7em .9em;
+    width: 70vw;
+  }
+  #change-btn{
+    font-size: 1.5rem;
+  }
+}  
